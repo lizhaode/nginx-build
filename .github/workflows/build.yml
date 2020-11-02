@@ -15,7 +15,7 @@ jobs:
       - name: install requirement
         run: |
           sudo apt-get update
-          sudo apt-get install autoconf autopoint libtool pkg-config g++ zlib1g-dev ca-certificates unzip
+          sudo apt-get install autoconf autopoint libtool pkg-config g++ zlib1g-dev ca-certificates unzip libgeoip-dev
       - name: openssl
         run: |
           wget https://www.openssl.org/source/openssl-1.1.1h.tar.gz
