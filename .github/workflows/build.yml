@@ -27,6 +27,8 @@ jobs:
       - name: brotli
         run: |
           git clone https://github.com/google/ngx_brotli.git
+          cd ngx_brotli
+          git submodule update --init
       - name: nginx
         run: |
           wget http://nginx.org/download/nginx-1.18.0.tar.gz
